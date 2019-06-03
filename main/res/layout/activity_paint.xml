@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:weightSum="5"
+              android:background="@color/colorPrimaryBackground">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:weightSum="2"
+            android:orientation="vertical">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp">
+
+            <TextView
+                    android:id="@+id/paint_roomName_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="방 이름"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/bmjua"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:weightSum="8"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp">
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/Black"
+                    android:id="@+id/black_button"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/White"
+                    android:id="@+id/white_button"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/Red"
+                    android:id="@+id/red_button"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/Orange"
+                    android:id="@+id/orange_button"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/Yellow"
+                    android:id="@+id/yellow_button"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/Green"
+                    android:id="@+id/green_button"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/Blue"
+                    android:id="@+id/blue_button"/>
+
+            <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/Purple"
+                    android:id="@+id/purple_button"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.example.myapplication.DrawingPaperActivity
+            android:id="@+id/canvas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="1"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="5dp"
+            android:layout_weight="2"
+            android:weightSum="3"
+            android:orientation="horizontal">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:weightSum="2"
+                android:orientation="vertical">
+            <Button
+                    android:id="@+id/eraser_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginVertical="3dp"
+                    android:text="Eraser"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bmjua"/>
+
+            <Button
+                    android:id="@+id/pen_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginVertical="3dp"
+                    android:text="Pen"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bmjua"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="vertical">
+            <Button
+                    android:id="@+id/endTurn_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginVertical="3dp"
+                    android:text="End my turn"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bmjua"/>
+
+            <TextView
+                    android:id="@+id/remainTime_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginVertical="3dp"
+                    android:text="Remaining Time"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/bmjua"/>
+            <ProgressBar
+                    android:id="@+id/paint_upload_progressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:fontFamily="@font/bmjua"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

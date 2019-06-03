@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorPrimaryBackground"
+              android:orientation="vertical"
+              android:weightSum="6">
+
+    <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="731dp"
+            android:layout_weight="1"
+            android:weightSum="5"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:weightSum="3">
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_weight="2"
+                    android:src="@drawable/sample_profile"/>
+
+            <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_marginVertical="3dp"
+                    android:layout_weight="1"
+                    android:stretchColumns="1">
+                <TableRow>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="User name :"
+                            android:fontFamily="@font/bmjua"/>
+                    <TextView
+                            android:id="@+id/mainMenu_userName_textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="viewEnd"
+                            android:text="Developer"
+                            android:fontFamily="@font/bmjua"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="rank :"
+                            android:fontFamily="@font/bmjua"/>
+                    <TextView
+                            android:id="@+id/mainMenu_userRank_textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="viewEnd"
+                            android:text="1"
+                            android:fontFamily="@font/bmjua"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="point"/>
+                    <TextView
+                            android:id="@+id/mainMenu_userPoint_textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="viewEnd"
+                            android:text="0"
+                            android:fontFamily="@font/bmjua"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/category_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="vertical">
+            <Button
+                    android:id="@+id/doPaint_button"
+                    android:text="draw Sketch"
+                    android:textSize="40dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/bmjua"/>
+            <Button
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/doText_button"
+                    android:text="write Text"
+                    android:textSize="40dp"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="@font/bmjua"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="5"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:weightSum="4">
+
+        <ImageView
+                android:id="@+id/mainMenu_profile_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/main_icon_userinfo"
+                android:background="@color/colorPrimary"/>
+
+        <ImageView
+                android:id="@+id/mainMenu_work_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/main_icon_list"/>
+
+        <ImageView
+                android:id="@+id/mainMenu_rank_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/main_icon_ranking"/>
+
+        <ImageView
+                android:id="@+id/mainMenu_setting_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/main_icon_setting"/>
+    </LinearLayout>
+</LinearLayout>

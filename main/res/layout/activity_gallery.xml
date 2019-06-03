@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@color/colorPrimaryBackground"
+              android:orientation="vertical"
+              android:weightSum="6">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"
+                android:gravity="center"
+                android:text="Gallery"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30dp"
+                android:fontFamily="@font/bmjua"/>
+        <ImageView
+                android:id="@+id/forjustTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <ListView
+                android:id="@+id/gallery_images_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="5"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:weightSum="4">
+
+        <ImageView
+                android:id="@+id/gallery_profile_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/main_icon_userinfo"/>
+
+        <ImageView
+                android:id="@+id/gallery_work_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/main_icon_list"
+                android:background="@color/colorPrimary"/>
+
+        <ImageView
+                android:id="@+id/gallery_rank_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/main_icon_ranking"/>
+
+        <ImageView
+                android:id="@+id/gallery_setting_imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/main_icon_setting"/>
+    </LinearLayout>
+</LinearLayout>

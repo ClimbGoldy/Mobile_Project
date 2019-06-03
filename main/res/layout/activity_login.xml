@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/main_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorPrimaryBackground"
+              android:orientation="vertical"
+              android:weightSum="4">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <ImageView
+                android:id="@+id/appLogo_imageView"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_marginVertical="20dp"
+                android:src="@drawable/app_logo"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Log In Page"
+                android:textSize="20dp"
+                android:fontFamily="@font/bmjua"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:textSize="17dp"
+                android:text="Please enter email and password to progress. After that, click the 'sign in' or 'create account' button."
+                android:fontFamily="@font/bmjua"/>
+
+        <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="signed_out"
+                android:textSize="15dp"
+                android:fontFamily="@font/bmjua"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical">
+
+        <LinearLayout
+                android:id="@+id/emailPasswordFields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+            <EditText
+                    android:id="@+id/fieldEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="email"
+                    android:inputType="textEmailAddress"/>
+
+            <EditText
+                    android:id="@+id/fieldPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/bmjua"/>
+            <EditText
+                    android:id="@+id/fieldUserName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="user name"
+                    android:inputType="textPassword"
+                    android:visibility="gone"
+                    android:fontFamily="@font/bmjua"/>
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/emailPasswordButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailPasswordFields"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+            <Button
+                    android:id="@+id/emailSignInButton"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="sign_in"/>
+
+            <Button
+                    android:id="@+id/emailCreateAccountButton"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginHorizontal="3dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="create_account"
+                    android:fontFamily="@font/bmjua"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/signedInButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:visibility="gone"
+                android:weightSum="2.0">
+
+            <Button
+                    android:id="@+id/signOutButton"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="sign_out"
+                    android:fontFamily="@font/bmjua"/>
+
+            <Button
+                    android:id="@+id/verifyEmailButton"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="verify_email"
+                    android:fontFamily="@font/bmjua"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
